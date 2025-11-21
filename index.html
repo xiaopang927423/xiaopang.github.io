@@ -3,69 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的技术栈</title>
+    <title>XXX | AI & Future Tech</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>我的技术栈展示</h1>
-        </nav>
-    </header>
-    
-    <main>
-        <section class="intro">
-            <h2>欢迎来到我的技术世界</h2>
-            <p>这里展示了我在不同技术领域的知识和经验。</p>
-        </section>
-        
-        <section class="tech-stack">
-            <h2>主要技术栈</h2>
-            <div class="tech-grid">
-                <div class="tech-item">
-                    <h3>LangChain</h3>
-                    <p>用于构建语言模型应用的框架</p>
-                </div>
-                <div class="tech-item">
-                    <h3>Python</h3>
-                    <p>多用途编程语言，广泛用于数据科学和AI</p>
-                </div>
-                <div class="tech-item">
-                    <h3>Java</h3>
-                    <p>企业级应用开发的可靠选择</p>
-                </div>
-                <div class="tech-item">
-                    <h3>JavaScript</h3>
-                    <p>前端开发和现代Web应用的核心</p>
-                </div>
-                <div class="tech-item">
-                    <h3>TypeScript</h3>
-                    <p>为JavaScript添加类型安全的超集</p>
-                </div>
-                <div class="tech-item">
-                    <h3>Django</h3>
-                    <p>Python的高级Web框架</p>
-                </div>
-                <div class="tech-item">
-                    <h3>FastAPI</h3>
-                    <p>现代、快速的Python Web框架</p>
-                </div>
-                <div class="tech-item">
-                    <h3>Spring AI</h3>
-                    <p>Spring生态中的AI集成框架</p>
-                </div>
-                <div class="tech-item">
-                    <h3>RAG</h3>
-                    <p>检索增强生成技术</p>
+
+    <canvas id="canvas-bg"></canvas>
+
+    <div class="container">
+        <header>
+            <div class="glitch-text">XXX</div>
+            <div class="typing-container">
+                <span id="typing-text"></span><span class="cursor">&nbsp;</span>
+            </div>
+            
+            <div class="contact-bar">
+                <span>📍 Base: XXX</span>
+                <span>🏫 University: XXX</span>
+                <span>📧 xxx@email.com</span>
+                <span>📞 XXX-XXXX-XXXX</span>
+            </div>
+
+            <div class="scroll-down">
+                👇
+            </div>
+        </header>
+
+        <section id="skills" class="observer-target">
+            <h2>Core Architecture</h2>
+            <div class="card">
+                <div class="tech-grid">
+                    <div class="tech-category">
+                        <h3>⚡ LLM & Inference</h3>
+                        <div class="tags-wrapper">
+                            <span class="tech-tag highlight">LangChain</span>
+                            <span class="tech-tag highlight">RAG</span>
+                            <span class="tech-tag highlight">vLLM</span>
+                            <span class="tech-tag highlight">DPO</span>
+                            <span class="tech-tag">GRPO/GSPO</span>
+                            <span class="tech-tag">HuggingFace</span>
+                        </div>
+                    </div>
+
+                    <div class="tech-category">
+                        <h3>💻 Backend Engineering</h3>
+                        <div class="tags-wrapper">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </div>
+
+                    <div class="tech-category">
+                        <h3>🌐 Full Stack</h3>
+                        <div class="tags-wrapper">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2025 我的技术展示网站</p>
-    </footer>
-    
+
+        <section id="projects" class="observer-target">
+            <h2>Flagship Project</h2>
+            <div class="card">
+                <div class="project-header">
+                    <span class="project-title">Intelligent RAG Assistant</span>
+                    <span class="project-tech-stack">[ LangChain | vLLM | DPO | Vue ]</span>
+                </div>
+                <p class="project-desc">
+                    垂直领域企业级智能问答系统，通过 RAG 与偏好对齐技术解决模型幻觉，利用 vLLM 实现高吞吐推理。
+                </p>
+                <ul class="project-details">
+                    <li><strong>Architecture:</strong> 搭建基于 <strong>LangChain</strong> 的检索增强生成链路，结合向量数据库实现精准知识检索。</li>
+                    <li><strong>Optimization:</strong> 引入 <strong>vLLM</strong> (PagedAttention) 替代原生推理，Token 生成速度提升 300%+。</li>
+                    <li><strong>Alignment:</strong> 探索使用 <strong>DPO (直接偏好优化)</strong> 与 GRPO 技术对模型进行微调，提升回答的安全性与逻辑性。</li>
+                    <li><strong>Full Stack:</strong> 基于 <strong>FastAPI</strong> 构建异步流式接口，前端 <strong>Vue</strong> 实现 ChatGPT 风格的打字机响应体验。</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <p>SYSTEM STATUS: ONLINE // DESIGNED BY GEMINI</p>
+        </footer>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
